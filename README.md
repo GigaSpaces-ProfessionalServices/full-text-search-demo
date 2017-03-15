@@ -1,1 +1,1 @@
-# full-text-search-demo
+The demo project for the XAP Full Text Search Article

@@ -26,12 +26,11 @@
         <form action="javascript:void(0);">
             <div class="form-group">
                 <select id="pre-defined-queries" class="form-control">
-                    <option selected value="body text:match ?" params="java">Find all words wits 'java' (query="body
-                        text:match ?" params="['java']")
-                    </option>
-                    <option value="body text:match ?" params="scala">Find all words wits 'scala' (query="body text:match
-                        ?" params="['scala']")
-                    </option>
+                    <option selected value="body text:match ?" params="java">Find all words wits 'java' (query="body text:match ?" params="['java']")</option>
+                    <option value="body text:match ?" params="java || Spring">Find all words wits 'java' or 'Spring' (query="body text:match ?" params="['java' || Spring']")</optio>
+                    <option value="body text:match ?" params="pro*">Find all the documents with the words starting from 'pro' (query="body text:match ?" params="['pro*']")</option>
+                    <option value="body text:match ?" params="java !xml">Find all documents with 'java' word but without 'xml' word. (query="body text:match ?" params="['java !xml']")</option>
+                    <option value="body text:match ?" params="roam~">Fuzzy Search query - Find all the documents with the words similar to 'roam' (query="body text:match ?" params="['roam~']")</option>
                 </select>
             </div>
             <button type="submit" class="search-submit btn btn-success">Search</button>
